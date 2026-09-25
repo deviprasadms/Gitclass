@@ -1,7 +1,7 @@
 node {  
     stage('Build') { 
          
-	echo "checking java version"
+	echo "checking java versions"
         sh 'java --version'
     }
     stage('Test') { 
