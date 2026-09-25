@@ -2,16 +2,16 @@ node {
     stage('Build') { 
          
 	echo "checking java versions"
-        sh 'java --version'
+        sh 'java --versions'
     }
     stage('Test') { 
         
-	echo "jenkin version"
-	sh 'jenkins --version'
+	echo "jenkin versions"
+	sh 'jenkins --versions'
     }
     stage('Deploy') { 
        
-	echo "git version"
-	sh 'git --version'
+	echo "git versions"
+	sh 'git --versions'
     }
 }
