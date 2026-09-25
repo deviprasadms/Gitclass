@@ -1,3 +1,9 @@
+properties([
+    pipelineTriggers([
+        pollSCM('* * * * *')
+    ])
+])
+
 node {  
     stage('Build') { 
          
